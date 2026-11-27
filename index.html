@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<meta name="description" content="Mahim's corner of the internet — projects, experiments and things I'm building.">
+<title>Mahim — Personal Website</title>
+<style>
+:root{color-scheme:dark;--bg:#090d18;--panel:#111a2b;--text:#edf3ff;--muted:#9ba9c2;--a:#8c7bff;--b:#36d6c5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#26336b66,transparent 38%),radial-gradient(ellipse at 0% 45%,#075b5940,transparent 32%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{width:min(1050px,calc(100% - 40px));margin:auto}header{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.4px;font-size:20px}.brand span{color:var(--b)}nav{display:flex;gap:24px}a{color:inherit;text-decoration:none}nav a{color:var(--muted);font-size:14px}nav a:hover,.link:hover{color:var(--b)}
+.hero{padding:105px 0 88px;max-width:800px}.eyebrow{color:var(--b);font-size:13px;font-weight:750;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(42px,8vw,78px);line-height:1.06;letter-spacing:-3px;margin:18px 0}.gradient{background:linear-gradient(100deg,#a99aff,#5be5d0);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid #ffffff20;background:#ffffff0b}.btn.primary{background:linear-gradient(100deg,#8271ff,#31cbbb);color:#08111c;border:0}
+section{padding:48px 0}.section-title{font-size:26px;letter-spacing:-.7px;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#17233a,#101827);border:1px solid #ffffff12;border-radius:18px;padding:24px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:#7e8cff88}.tag{font-size:11px;color:var(--b);font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.card h3{margin:10px 0 5px;font-size:20px}.card p{color:var(--muted);margin:0 0 16px}.link{font-size:14px;font-weight:700;color:#b9b0ff}.about{max-width:700px;color:var(--muted)}footer{border-top:1px solid #ffffff14;padding:28px 0 40px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:650px){nav{gap:13px}.hero{padding:75px 0 55px}.hero h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}section{padding:34px 0}.wrap{width:min(100% - 32px,1050px)}}
+</style>
+</head>
+<body>
+<header class="wrap"><a class="brand" href="#">mahim<span>.</span></a><nav><a href="#projects">Projects</a><a href="#about">About</a><a href="https://github.com/mahim11184" target="_blank" rel="noreferrer">GitHub ↗</a></nav></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">WELCOME TO MY WEBSITE</div><h1>Hey, I'm <span class="gradient">Mahim.</span><br> I build things for the web.</h1><p>A little corner of the internet for my projects, experiments, and ideas. Always learning, always building.</p><div class="actions"><a class="btn primary" href="#projects">Explore projects ↓</a><a class="btn" href="https://github.com/mahim11184" target="_blank" rel="noreferrer">Visit my GitHub ↗</a></div></section>
+<section id="projects"><h2 class="section-title">Featured projects</h2><p class="sub">A few things I'm working on.</p><div class="grid">
+<article class="card"><div class="tag">Browser · In development</div><h3>Niobium Lite</h3><p>A browser project exploring a clean mobile browsing experience and useful features.</p><a class="link" href="https://github.com/mahim11184/Niobium-lite" target="_blank" rel="noreferrer">View repository ↗</a></article>
+<article class="card"><div class="tag">More projects</div><h3>Experiments & ideas</h3><p>Small experiments, web projects, and new ideas will find a home here.</p><a class="link" href="https://github.com/mahim11184?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories ↗</a></article>
+</div></section>
+<section id="about"><h2 class="section-title">About this site</h2><p class="about">This website is built with plain HTML and CSS, designed to be fast, responsive, and easy to update. It's hosted with GitHub Pages.</p></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Mahim</span><span>Made with curiosity ✦ Hosted on GitHub Pages</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
